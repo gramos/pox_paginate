@@ -18,9 +18,9 @@ begin
     gemspec.name = "pox_paginate"
     gemspec.summary = "Transparent support for pagination using WillPaginate using POX (Plain Old Xml) and ActiveResource"
     gemspec.description = "Wrest is a HTTP and REST client library which allows you to quickly build well encapsulated, object oriented wrappers around any web service."
-    gemspec.authors = ["Sidu Ponnappa", "Niranjan Paranjape"]
-    gemspec.email = "opensource@c42.in"
-    gemspec.homepage = "http://github.com/kaiwren/wrest"
+    gemspec.authors = ["Sidu Ponnappa", "Niranjan Paranjape", "Gastón Ramos"]
+    gemspec.email = "ramos.gaston@gmail.com"
+    gemspec.homepage = "http://github.com/gramos/pox_paginate"
     gemspec.has_rdoc = false
     gemspec.require_path = "lib"
     gemspec.files.exclude *['.gitignore']
