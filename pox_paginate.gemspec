@@ -32,6 +32,7 @@ Gem::Specification.new do |s|
      "lib/pox_paginate/xml_mini/libxml.rb",
      "lib/pox_paginate/xml_mini/nokogiri.rb",
      "lib/pox_paginate/xml_mini/rexml.rb",
+     "pox_paginate.gemspec",
      "spec/config/database.yml",
      "spec/db/migrate/001_create_oogas.rb",
      "spec/pox_paginate/active_resource/xml_format_spec.rb",
@@ -59,17 +60,17 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<activesupport>, [">= 2.3.5"])
-      s.add_runtime_dependency(%q<activeresource>, [">= 2.3.5"])
+      s.add_runtime_dependency(%q<activesupport>, [">= 3.0.0.rc"])
+      s.add_runtime_dependency(%q<activeresource>, [">= 3.0.0.rc"])
       s.add_runtime_dependency(%q<will_paginate>, [">= 2.3.12"])
     else
-      s.add_dependency(%q<activesupport>, [">= 2.3.5"])
-      s.add_dependency(%q<activeresource>, [">= 2.3.5"])
+      s.add_dependency(%q<activesupport>, [">= 3.0.0.rc"])
+      s.add_dependency(%q<activeresource>, [">= 3.0.0.rc"])
       s.add_dependency(%q<will_paginate>, [">= 2.3.12"])
     end
   else
-    s.add_dependency(%q<activesupport>, [">= 2.3.5"])
-    s.add_dependency(%q<activeresource>, [">= 2.3.5"])
+    s.add_dependency(%q<activesupport>, [">= 3.0.0.rc"])
+    s.add_dependency(%q<activeresource>, [">= 3.0.0.rc"])
     s.add_dependency(%q<will_paginate>, [">= 2.3.12"])
   end
 end

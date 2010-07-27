@@ -1,7 +1,7 @@
 class Hash
 
   class << self
-   alias_method :from_xml_without_extension, :from_xml
+    alias_method :from_xml_without_extension, :from_xml
   end
 
   def self.from_xml(xml)
