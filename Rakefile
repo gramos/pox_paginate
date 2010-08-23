@@ -27,7 +27,7 @@ begin
     gemspec.test_files.exclude *['.gitignore']
     gemspec.add_dependency('activesupport', '>= 3.0.0.rc')
     gemspec.add_dependency('activeresource', '>= 3.0.0.rc')
-    gemspec.add_dependency('will_paginate', '>= 2.3.12')
+    gemspec.add_dependency('will_paginate', '3.0.pre2')
   end
 
   Jeweler::GemcutterTasks.new
