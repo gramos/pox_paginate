@@ -6,12 +6,10 @@ This gem is based on our experience building largish distributed systems consist
 
 == Installation
 
-PoxPaginate is available as a gem.
-  gem install pox_paginate
-  
-and in your Rails environment.rb
-  config.gem "pox_paginate", :version => '>= 0.1.0', :lib => "pox_paginate"
-  
+In your Rails environment.rb
+
+ config.gem "pox_paginate", :git => 'git@github.com:gramos/pox_paginate.git'
+
 We also strongly recommend you use Ruby LibXML or Nokogiri rather than the standard REXML for deserialisation. While PoxPaginate supports all three, REXML is simply too slow for use in production. To switch to using either gem:
   (sudo) gem install libxml-ruby
 or
@@ -21,14 +19,14 @@ After this, you need to instruct Rails to use them. In environment.rb, do
   ActiveSupport::XmlMini.backend = 'LibXML'
 or
   ActiveSupport::XmlMini.backend = 'Nokogiri'
-  
+
 Before you ask, yes we're working on adding support for jdom so PoxPaginate can be used on JRuby :)
 
 == Usage
 
 When constructing the xml serialised form of a resource in a controller, add pagination - like so:
   class ProductsController < ApplicationController
-  
+
     # GET /products
     # GET /products.xml
     def index
@@ -49,7 +47,7 @@ On the client, you do the usual:
   class Product < ActiveResource::Base
     self.site = 'http://oogabooga.in'
   end
-  
+
 Now whenever you do
   Product.find(:all, :params => {:page => 2, :per_page => 5})
 
