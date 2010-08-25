@@ -1,4 +1,4 @@
-= PoxPaginate 0.1.0
+= PoxPaginate 0.1.2
 
 PoxPaginate is an extension to WillPaginate and ActiveResource that makes it possible to transparently paginate over a collection of XML serialised resources.
 
@@ -8,7 +8,7 @@ This gem is based on our experience building largish distributed systems consist
 
 In your Rails environment.rb
 
- config.gem "pox_paginate", :git => 'git@github.com:gramos/pox_paginate.git'
+  config.gem "pox_paginate", :git => 'git@github.com:gramos/pox_paginate.git'
 
 We also strongly recommend you use Ruby LibXML or Nokogiri rather than the standard REXML for deserialisation. While PoxPaginate supports all three, REXML is simply too slow for use in production. To switch to using either gem:
   (sudo) gem install libxml-ruby
